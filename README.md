@@ -13,25 +13,19 @@ This project demonstrates strong backend architecture, clean MVC structure, auth
 
 ## Features
 
-- User Authentication & Authorization
+- User Authentication & Authorization:
 Secure login system with protected admin routes.
-
-- Product Management
+- Product Management:
 Add, update, delete, categorize, and upload product images.
-
-- Order Management
+- Order Management:
 Track orders, update order status, and view complete history.
-
-- User Management
+- User Management:
 Admin can monitor and manage all registered users.
-
-- Real-Time Admin Updates
+- Real-Time Admin Updates:
 New orders, product changes, and user events reflected instantly using WebSockets.
-
-- Cart & Checkout System
+- Cart & Checkout System:
 Add/remove items, update quantities, and place final checkout.
-
-- Server-Side Rendering
+- Server-Side Rendering:
 Fast and SEO-friendly UI with EJS templating.
 
 
