@@ -1,0 +1,79 @@
+<section>
+  <textarea name="" id="objectc" cols="30" rows="10"></textarea>
+  <button id = "objectsubmit" onclick = "myFunction()">Press to Enter Bulk Products</button>
+</section>
+
+<script>
+  function myFunction(){
+    var item = JSON.parse( $("#objectc").val());
+    if(Array.isArray(item.price)){
+      var params = {
+          "sellerRole": "admin",
+          "name": item.name,
+          "price": JSON.stringify(item.price),
+          "GST": item.GST,
+          "image": "",
+          "HSN": item.HSN,
+          "vcode": JSON.stringify(item.code),
+          "brand": item.brand,
+          "categoryName": item.categoryName,
+          "containedLiquid": item.containedLiquid,
+          "description": "",
+          "itemWeight": "",
+          "netQuantity": "",
+          "piecePerPack": JSON.stringify(item.piecePerPack),
+          "packPrice": JSON.stringify(item.packPrice),
+          "size": item.size,
+          "volume": "",
+          "subCategory": "",
+          "isverified": "Yes"
+      }
+      $.ajax({
+              type: 'POST',
+              url: '/upload-product',
+              data: params,
+              dataType: 'json',
+              encode: true,
+          }).done(function (result) {
+              if (result.status == "success") {
+                alert('success');
+
+              }
+          })
+    }else{
+      var params = {
+          "sellerRole": "admin",
+          "name": item.name,
+          "price": item.price,
+          "GST": item.GST,
+          "image": "",
+          "HSN": item.HSN,
+          "vcode": item.code,
+          "brand": item.brand,
+          "categoryName": item.categoryName,
+          "containedLiquid": item.containedLiquid,
+          "description": "",
+          "itemWeight": "",
+          "netQuantity": "",
+          "piecePerPack": item.piecePerPack,
+          "packPrice": item.packPrice,
+          "size": item.size,
+          "volume": "",
+          "subCategory": "",
+          "isverified": "Yes"
+      }
+      $.ajax({
+              type: 'POST',
+              url: '/upload-novar-product',
+              data: params,
+              dataType: 'json',
+              encode: true,
+          }).done(function (result) {
+              if (result.status == "success") {
+                alert('success');
+
+              }
+          })
+    }
+  }
+</script>

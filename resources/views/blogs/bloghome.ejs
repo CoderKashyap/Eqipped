@@ -1,0 +1,6 @@
+<h1>Home</h1>
+<p><%= content %> </p>
+<%post.forEach(posts => {%>
+    <h1><%=posts.title%></h1>
+    <p><%=posts.text.substring(0,30) + "...";%><a href="posts/<%=posts._id%>">Read more</a></p>
+    <%}); %> 

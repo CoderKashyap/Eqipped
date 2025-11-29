@@ -1,0 +1,48 @@
+# -----------------------------------------
+# Node / Environment
+# -----------------------------------------
+node_modules/
+package-lock.json
+
+# Environment files (VERY IMPORTANT)
+.env
+.env.*
+*.env.local
+*.env.production
+*.env.development
+
+# -----------------------------------------
+# Backend confidential folders
+# -----------------------------------------
+# app/config/
+# app/http/controllers/
+# app/http/middlewares/
+# app/models/
+# helpers/
+
+# If you want to show folder structure but hide code:
+app/http/controllers/**/*.js
+app/http/middlewares/**/*.js
+app/models/**/*.js
+
+# -----------------------------------------
+# Routes (hide API logic)
+# -----------------------------------------
+routes/web.js
+routes/Paytm/
+ccavRequestHandler.js
+ccavResponseHandler.js
+ccavutil.js
+
+# Payment & Auth Related Logic
+Paytm/
+Razorpay/
+Stripe/
+payment/
+
+
+# -----------------------------------------
+# Server Entry (contains confidential logic)
+# -----------------------------------------
+server.js
+app.js
