@@ -73,7 +73,7 @@ Fast and SEO-friendly UI with EJS templating.
 ```bash
 
 1. Clone the repo:
-git clone [https://github.com/CoderKashyap/Eqipped.git](https://github.com/CoderKashyap/Eqipped.git)
+git clone https://github.com/CoderKashyap/Eqipped.git
 
 2. Install frontend dependencies:
 npm install
@@ -97,6 +97,7 @@ npm run dev
 **Auth**
 
 POST /register
+
 Request: { "username": "testuser", "email": "test@mail.com", "password": "123456" }
 Response:
 302 Redirect → /login
