@@ -11,8 +11,6 @@ This project demonstrates strong backend architecture, clean MVC structure, auth
 - **Real-Time:** WebSockets (event-driven updates)
 - **Other Tools:** Multer, Bcrypt, JWT, Session Management
 
----
-
 ## Features
 
 - User Authentication & Authorization
@@ -37,7 +35,6 @@ Add/remove items, update quantities, and place final checkout.
 Fast and SEO-friendly UI with EJS templating.
 
 ---
-
 
 ## Project Structure
 
@@ -94,7 +91,7 @@ npm run dev
 
 
 
-**API Documentation**
+# API Overview
 
 ```bash
 
