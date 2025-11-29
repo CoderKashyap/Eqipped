@@ -76,7 +76,6 @@ Fast and SEO-friendly UI with EJS templating.
 git clone [https://github.com/CoderKashyap/Mern-Auth-Boilerplate.git](https://github.com/CoderKashyap/Eqipped.git)
 
 2. Install frontend dependencies:
-cd equipped
 npm install
 
 3. Create .env file
