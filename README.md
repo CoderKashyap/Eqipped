@@ -34,7 +34,7 @@ Add/remove items, update quantities, and place final checkout.
 - Server-Side Rendering
 Fast and SEO-friendly UI with EJS templating.
 
----
+
 
 ## Project Structure
 
@@ -91,7 +91,7 @@ npm run dev
 
 
 
-# API Overview
+## API Overview
 
 ```bash
 
@@ -129,7 +129,7 @@ Flash message: "Logged in successfully" (implicit)
 ```
 
 
-# Why This Project Stands Out?
+## Why This Project Stands Out?
 
 - Covers essential e-commerce workflows
 - Shows strong backend + MVC experience
